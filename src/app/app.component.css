@@ -6,3 +6,12 @@ mat-sidenav {
   width: 250px;
 }
 
+@media only screen and (min-width: 1000px) {
+  mat-sidenav-content {
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid lightgrey;
+  }
+}
+
+
