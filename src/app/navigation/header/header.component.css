@@ -8,6 +8,12 @@ a:active {
   color: lightgray;
 }
 
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
 .navigation-items {
   list-style: none;
   padding: 0;
