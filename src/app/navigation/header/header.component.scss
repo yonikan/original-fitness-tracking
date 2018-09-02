@@ -1,12 +1,3 @@
-a {
-  text-decoration: none;
-  color: white;
-}
-
-a:hover,
-a:active {
-  color: lightgray;
-}
 
 mat-toolbar {
   position: sticky;
@@ -35,6 +26,18 @@ mat-toolbar {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+
+  .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
 }
 
 .nav-caption {

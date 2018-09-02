@@ -17,6 +17,7 @@ import { TrainingService } from './training/training.service';
 import { environment } from '../environments/environment';
 import { UIService } from './shared/ui.service';
 import { AuthModule } from './auth/auth.module';
+import { DashboardService } from './dashboard/dashboard.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { AuthModule } from './auth/auth.module';
     AuthModule,
     AngularFirestoreModule
   ],
-  providers: [AuthService, TrainingService, UIService],
+  providers: [AuthService, TrainingService, DashboardService, UIService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

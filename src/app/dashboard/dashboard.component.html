@@ -1,8 +1,13 @@
-<p>
-  dashboard works!
-</p>
 
-<div fxLayoutAlign="center">
-  <app-widget-container></app-widget-container>
-  <app-widget-container></app-widget-container>
+<div class="dashboard" fxLayoutAlign="center">
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+
+  <div *ngIf="!isLoading" fxLayout="row wrap" fxLayoutAlign="center">
+      <app-widget-container
+        *ngFor="let widget of widgetsData; let i = index"
+        [widgetTitle]="widgetsData[i].name"
+        [widgetData]="widgetsData[i]">
+    </app-widget-container>
+  </div>
+
 </div>

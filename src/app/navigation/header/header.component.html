@@ -16,24 +16,42 @@
   <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
     <ul fxLayout fxLayoutGap="10px" class="navigation-items">
       <li *ngIf="!isAuth">
-        <a routerLink="/signup">Signup</a>
+        <button mat-button class="" routerLink="/signup">
+          <a >Signup</a>
+        </button>
       </li>
 
       <li *ngIf="!isAuth">
-        <a routerLink="/login">Login</a>
+        <button mat-button class="" routerLink="/login">
+          <a >Login</a>
+        </button>
       </li>
 
       <li *ngIf="isAuth">
-        <a routerLink="/training">Training</a>
+        <button mat-button class="" routerLink="/training">
+          <a >Training</a>
+        </button>
       </li>
 
       <li *ngIf="isAuth">
-          <a routerLink="/dashboard">Dashboard</a>
-        </li>
+          <button mat-button class="" routerLink="/dashboard">
+            <a >Dashboard</a>
+          </button>
+      </li>
 
       <li *ngIf="isAuth">
-        <a style="cursor: pointer" (click)="onLogout()">Logout</a>
+          <button mat-button class="" (click)="onLogout()">
+            <a style="cursor: pointer" >Logout</a>
+          </button>
+      </li>
+
+      <li *ngIf="isAuth">
+          <button mat-button class="">
+            <img class="avatar" src="../assets/img/profile-sm.jpg">
+          </button>
       </li>
     </ul>
+
   </div>
+
 </mat-toolbar>
