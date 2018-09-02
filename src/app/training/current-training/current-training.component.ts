@@ -7,7 +7,7 @@ import { TrainingService } from '../training.service';
 @Component({
   selector: 'app-current-training',
   templateUrl: './current-training.component.html',
-  styleUrls: ['./current-training.component.css']
+  styleUrls: ['./current-training.component.scss']
 })
 export class CurrentTrainingComponent implements OnInit {
   progress = 0;
